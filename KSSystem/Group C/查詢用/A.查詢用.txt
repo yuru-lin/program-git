@@ -1,0 +1,7 @@
+﻿
+
+
+查詢用
+依條碼查產品明細資料	=	C_QuerySRNDetail.vb
+由草稿查詢條碼儲位		=	C_QuerySRNFromDraft.vb
+未入庫明細				=	C_QuerySRNNotInB1Yet.vb

@@ -1,0 +1,7 @@
+
+
+
+
+領料單
+派工作業	=	B_QckAddOIGEv2
+扣帳作業	=	B_QckAddOIGEv3

@@ -1,0 +1,464 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+KSSystem
+</name>
+</assembly>
+<members>
+<member name="T:KSSystem.ReportDataSet.dtThroughputDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtMeltsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtTransportDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtFeedingDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtOutDetailDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtOutStatisticDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtInDetailDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtInStatisticDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtAdjustDetailDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtAdjustStatisticDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtCarDrDetailDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtCarDrStatisticDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtEBStatisticDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.EBStatementDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtCSDGV1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtCSDGV5DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtCSDGV2DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtCSDGV3DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtCSDGV4DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtPayment1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtPayment2DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtPayment3DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtSchedulingDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtSPickingDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtSPicking1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtDispatchingDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dt_KS_Z_StockApply_DetailDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dt_KS_Z_WelfareDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dt_KS_A_EC_DetailDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dt_KS_A_ECOrder_DetailDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dt_加工原料肉領料單DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dt_冷藏貨庫存表DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtThroughputRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtMeltsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtTransportRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtFeedingRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtOutDetailRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtOutStatisticRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtInDetailRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtInStatisticRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtAdjustDetailRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtAdjustStatisticRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtCarDrDetailRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtCarDrStatisticRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtEBStatisticRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.EBStatementRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtCSDGV1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtCSDGV5Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtCSDGV2Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtCSDGV3Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtCSDGV4Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtPayment1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtPayment2Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtPayment3Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtSchedulingRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtSPickingRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtSPicking1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtDispatchingRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dt_KS_Z_StockApply_DetailRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dt_KS_Z_WelfareRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dt_KS_A_EC_DetailRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dt_KS_A_ECOrder_DetailRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dt_加工原料肉領料單Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dt_冷藏貨庫存表Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtThroughputRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtMeltsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtTransportRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtFeedingRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtOutDetailRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtOutStatisticRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtInDetailRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtInStatisticRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtAdjustDetailRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtAdjustStatisticRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtCarDrDetailRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtCarDrStatisticRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtEBStatisticRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.EBStatementRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtCSDGV1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtCSDGV5RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtCSDGV2RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtCSDGV3RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtCSDGV4RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtPayment1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtPayment2RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtPayment3RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtSchedulingRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtSPickingRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtSPicking1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dtDispatchingRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dt_KS_Z_StockApply_DetailRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dt_KS_Z_WelfareRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dt_KS_A_EC_DetailRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dt_KS_A_ECOrder_DetailRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dt_加工原料肉領料單RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:KSSystem.ReportDataSet.dt_冷藏貨庫存表RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:KSSystem.ReportDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:KSSystem.KaiShingPlugDataSet.V_FdCkDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:KSSystem.KaiShingPlugDataSet.V_FdCkRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:KSSystem.KaiShingPlugDataSet.V_FdCkRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:KSSystem.KaiShingPlugDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:KSSystem.KaiShingPlugDataSetTableAdapters.V_FdCkTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:KSSystem.KaiShingPlugDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(KSSystem.KaiShingPlugDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:KSSystem.KaiShingPlugDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(KSSystem.KaiShingPlugDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:KSSystem.KaiShingPlugDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(KSSystem.KaiShingPlugDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:KSSystem.KaiShingPlugDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:KSSystem.KaiShingPlugDataSetTableAdapters.TableAdapterManager.UpdateAll(KSSystem.KaiShingPlugDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:KSSystem.KaiShingPlugDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:KSSystem.KaiShingPlugDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:KSSystem.KaiShingPlugDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="P:KSSystem.My.Resources.Resources.ResourceManager">
+	<summary>
+  傳回這個類別使用的快取的 ResourceManager 執行個體。
+</summary>
+</member><member name="P:KSSystem.My.Resources.Resources.Culture">
+	<summary>
+  覆寫目前執行緒的 CurrentUICulture 屬性，對象是所有
+  使用這個強型別資源類別的資源查閱。
+</summary>
+</member><member name="T:KSSystem.My.Resources.Resources">
+	<summary>
+  用於查詢當地語系化字串等的強型別資源類別
+</summary>
+</member>
+</members>
+</doc>

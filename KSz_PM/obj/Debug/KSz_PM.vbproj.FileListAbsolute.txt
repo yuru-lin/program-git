@@ -1,0 +1,5 @@
+C:\Users\phil\Desktop\外掛程式\0.資訊整合開發\0.外掛整合程式\0.凱馨外掛系統\KSz_PM\bin\Debug\KSz_PM.dll
+C:\Users\phil\Desktop\外掛程式\0.資訊整合開發\0.外掛整合程式\0.凱馨外掛系統\KSz_PM\bin\Debug\KSz_PM.pdb
+C:\Users\phil\Desktop\外掛程式\0.資訊整合開發\0.外掛整合程式\0.凱馨外掛系統\KSz_PM\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\phil\Desktop\外掛程式\0.資訊整合開發\0.外掛整合程式\0.凱馨外掛系統\KSz_PM\obj\Debug\KSz_PM.dll
+C:\Users\phil\Desktop\外掛程式\0.資訊整合開發\0.外掛整合程式\0.凱馨外掛系統\KSz_PM\obj\Debug\KSz_PM.pdb

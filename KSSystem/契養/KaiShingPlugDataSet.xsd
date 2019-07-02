@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="KaiShingPlugDataSet" targetNamespace="http://tempuri.org/KaiShingPlugDataSet.xsd" xmlns:mstns="http://tempuri.org/KaiShingPlugDataSet.xsd" xmlns="http://tempuri.org/KaiShingPlugDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="KaiShingPlugConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="KaiShingPlugConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.KSSystem.My.MySettings.GlobalReference.Default.KaiShingPlugConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="V_FdCkTableAdapter" GeneratorDataComponentClassName="V_FdCkTableAdapter" Name="V_FdCk" UserDataComponentName="V_FdCkTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="KaiShingPlugConnectionString (MySettings)" DbObjectName="KaiShingPlug.dbo.V_FdCk" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT FdCk_ID, SerialID, InCk_date, OutCk_date, InCk_Num, OutCk_Num, SumCk_Num, Grow_Rate, Feed_weight, Back_weight, Conver_Rate, Ck_Square, Square_Num, Ck_Freight, Ck_Feed, ECk_Cost, FCk_Cost, Feed_Cost, Back_Cost, Mulite_Exp, Bal_Exp, ECk_Rate, FCk_Rate, Feed_Rate, Back_Rate, Mulite_Rate, Bal_Exp_Rate, Ck_Days, Chaff, Disease_Pay, Power_Bill, FirstStage, SecondStage, ThridStage, FourthStage, CK_Medicine_R1, CK_Medicine_R2, CK_Medicine_R3, CK_Medicine_R4, CK_Medicine_R1Amt, CK_Medicine_R2Amt, CK_Medicine_R3Amt, CK_Medicine_R4Amt, Subcontract_Pay, CatchCk_Pay, TrackAmt, SumAmt, Remark, FdList_ID, Expr1, CkKind_List, FatherCk, MotherCk, SumCk, FatherCk_Avg, MotherCk_Avg, Regard_Avg, Ck_Avg, Expr2, Ckkind, ReturnQuantity FROM dbo.V_FdCk</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="FdCk_ID" DataSetColumn="FdCk_ID" />
+              <Mapping SourceColumn="SerialID" DataSetColumn="SerialID" />
+              <Mapping SourceColumn="InCk_date" DataSetColumn="InCk_date" />
+              <Mapping SourceColumn="OutCk_date" DataSetColumn="OutCk_date" />
+              <Mapping SourceColumn="InCk_Num" DataSetColumn="InCk_Num" />
+              <Mapping SourceColumn="OutCk_Num" DataSetColumn="OutCk_Num" />
+              <Mapping SourceColumn="SumCk_Num" DataSetColumn="SumCk_Num" />
+              <Mapping SourceColumn="Grow_Rate" DataSetColumn="Grow_Rate" />
+              <Mapping SourceColumn="Feed_weight" DataSetColumn="Feed_weight" />
+              <Mapping SourceColumn="Back_weight" DataSetColumn="Back_weight" />
+              <Mapping SourceColumn="Conver_Rate" DataSetColumn="Conver_Rate" />
+              <Mapping SourceColumn="Ck_Square" DataSetColumn="Ck_Square" />
+              <Mapping SourceColumn="Square_Num" DataSetColumn="Square_Num" />
+              <Mapping SourceColumn="Ck_Freight" DataSetColumn="Ck_Freight" />
+              <Mapping SourceColumn="Ck_Feed" DataSetColumn="Ck_Feed" />
+              <Mapping SourceColumn="ECk_Cost" DataSetColumn="ECk_Cost" />
+              <Mapping SourceColumn="FCk_Cost" DataSetColumn="FCk_Cost" />
+              <Mapping SourceColumn="Feed_Cost" DataSetColumn="Feed_Cost" />
+              <Mapping SourceColumn="Back_Cost" DataSetColumn="Back_Cost" />
+              <Mapping SourceColumn="Mulite_Exp" DataSetColumn="Mulite_Exp" />
+              <Mapping SourceColumn="Bal_Exp" DataSetColumn="Bal_Exp" />
+              <Mapping SourceColumn="ECk_Rate" DataSetColumn="ECk_Rate" />
+              <Mapping SourceColumn="FCk_Rate" DataSetColumn="FCk_Rate" />
+              <Mapping SourceColumn="Feed_Rate" DataSetColumn="Feed_Rate" />
+              <Mapping SourceColumn="Back_Rate" DataSetColumn="Back_Rate" />
+              <Mapping SourceColumn="Mulite_Rate" DataSetColumn="Mulite_Rate" />
+              <Mapping SourceColumn="Bal_Exp_Rate" DataSetColumn="Bal_Exp_Rate" />
+              <Mapping SourceColumn="Ck_Days" DataSetColumn="Ck_Days" />
+              <Mapping SourceColumn="Chaff" DataSetColumn="Chaff" />
+              <Mapping SourceColumn="Disease_Pay" DataSetColumn="Disease_Pay" />
+              <Mapping SourceColumn="Power_Bill" DataSetColumn="Power_Bill" />
+              <Mapping SourceColumn="FirstStage" DataSetColumn="FirstStage" />
+              <Mapping SourceColumn="SecondStage" DataSetColumn="SecondStage" />
+              <Mapping SourceColumn="ThridStage" DataSetColumn="ThridStage" />
+              <Mapping SourceColumn="FourthStage" DataSetColumn="FourthStage" />
+              <Mapping SourceColumn="CK_Medicine_R1" DataSetColumn="CK_Medicine_R1" />
+              <Mapping SourceColumn="CK_Medicine_R2" DataSetColumn="CK_Medicine_R2" />
+              <Mapping SourceColumn="CK_Medicine_R3" DataSetColumn="CK_Medicine_R3" />
+              <Mapping SourceColumn="CK_Medicine_R4" DataSetColumn="CK_Medicine_R4" />
+              <Mapping SourceColumn="CK_Medicine_R1Amt" DataSetColumn="CK_Medicine_R1Amt" />
+              <Mapping SourceColumn="CK_Medicine_R2Amt" DataSetColumn="CK_Medicine_R2Amt" />
+              <Mapping SourceColumn="CK_Medicine_R3Amt" DataSetColumn="CK_Medicine_R3Amt" />
+              <Mapping SourceColumn="CK_Medicine_R4Amt" DataSetColumn="CK_Medicine_R4Amt" />
+              <Mapping SourceColumn="Subcontract_Pay" DataSetColumn="Subcontract_Pay" />
+              <Mapping SourceColumn="CatchCk_Pay" DataSetColumn="CatchCk_Pay" />
+              <Mapping SourceColumn="TrackAmt" DataSetColumn="TrackAmt" />
+              <Mapping SourceColumn="SumAmt" DataSetColumn="SumAmt" />
+              <Mapping SourceColumn="Remark" DataSetColumn="Remark" />
+              <Mapping SourceColumn="FdList_ID" DataSetColumn="FdList_ID" />
+              <Mapping SourceColumn="Expr1" DataSetColumn="Expr1" />
+              <Mapping SourceColumn="CkKind_List" DataSetColumn="CkKind_List" />
+              <Mapping SourceColumn="FatherCk" DataSetColumn="FatherCk" />
+              <Mapping SourceColumn="MotherCk" DataSetColumn="MotherCk" />
+              <Mapping SourceColumn="SumCk" DataSetColumn="SumCk" />
+              <Mapping SourceColumn="FatherCk_Avg" DataSetColumn="FatherCk_Avg" />
+              <Mapping SourceColumn="MotherCk_Avg" DataSetColumn="MotherCk_Avg" />
+              <Mapping SourceColumn="Regard_Avg" DataSetColumn="Regard_Avg" />
+              <Mapping SourceColumn="Ck_Avg" DataSetColumn="Ck_Avg" />
+              <Mapping SourceColumn="Expr2" DataSetColumn="Expr2" />
+              <Mapping SourceColumn="Ckkind" DataSetColumn="Ckkind" />
+              <Mapping SourceColumn="ReturnQuantity" DataSetColumn="ReturnQuantity" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="KaiShingPlugDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="KaiShingPlugDataSet" msprop:Generator_DataSetName="KaiShingPlugDataSet" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="V_FdCk" msprop:Generator_UserTableName="V_FdCk" msprop:Generator_RowDeletedName="V_FdCkRowDeleted" msprop:Generator_RowChangedName="V_FdCkRowChanged" msprop:Generator_RowClassName="V_FdCkRow" msprop:Generator_RowChangingName="V_FdCkRowChanging" msprop:Generator_RowEvArgName="V_FdCkRowChangeEvent" msprop:Generator_RowEvHandlerName="V_FdCkRowChangeEventHandler" msprop:Generator_TableClassName="V_FdCkDataTable" msprop:Generator_TableVarName="tableV_FdCk" msprop:Generator_RowDeletingName="V_FdCkRowDeleting" msprop:Generator_TablePropName="V_FdCk">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FdCk_ID" msprop:Generator_UserColumnName="FdCk_ID" msprop:Generator_ColumnPropNameInRow="FdCk_ID" msprop:Generator_ColumnVarNameInTable="columnFdCk_ID" msprop:Generator_ColumnPropNameInTable="FdCk_IDColumn" type="xs:int" />
+              <xs:element name="SerialID" msprop:Generator_UserColumnName="SerialID" msprop:Generator_ColumnPropNameInRow="SerialID" msprop:Generator_ColumnVarNameInTable="columnSerialID" msprop:Generator_ColumnPropNameInTable="SerialIDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="InCk_date" msprop:Generator_UserColumnName="InCk_date" msprop:Generator_ColumnPropNameInRow="InCk_date" msprop:Generator_ColumnVarNameInTable="columnInCk_date" msprop:Generator_ColumnPropNameInTable="InCk_dateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="OutCk_date" msprop:Generator_UserColumnName="OutCk_date" msprop:Generator_ColumnPropNameInRow="OutCk_date" msprop:Generator_ColumnVarNameInTable="columnOutCk_date" msprop:Generator_ColumnPropNameInTable="OutCk_dateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="InCk_Num" msprop:Generator_UserColumnName="InCk_Num" msprop:Generator_ColumnPropNameInRow="InCk_Num" msprop:Generator_ColumnVarNameInTable="columnInCk_Num" msprop:Generator_ColumnPropNameInTable="InCk_NumColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="OutCk_Num" msprop:Generator_UserColumnName="OutCk_Num" msprop:Generator_ColumnPropNameInRow="OutCk_Num" msprop:Generator_ColumnVarNameInTable="columnOutCk_Num" msprop:Generator_ColumnPropNameInTable="OutCk_NumColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="SumCk_Num" msprop:Generator_UserColumnName="SumCk_Num" msprop:Generator_ColumnPropNameInRow="SumCk_Num" msprop:Generator_ColumnVarNameInTable="columnSumCk_Num" msprop:Generator_ColumnPropNameInTable="SumCk_NumColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Grow_Rate" msprop:Generator_UserColumnName="Grow_Rate" msprop:Generator_ColumnPropNameInRow="Grow_Rate" msprop:Generator_ColumnVarNameInTable="columnGrow_Rate" msprop:Generator_ColumnPropNameInTable="Grow_RateColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Feed_weight" msprop:Generator_UserColumnName="Feed_weight" msprop:Generator_ColumnPropNameInRow="Feed_weight" msprop:Generator_ColumnVarNameInTable="columnFeed_weight" msprop:Generator_ColumnPropNameInTable="Feed_weightColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Back_weight" msprop:Generator_UserColumnName="Back_weight" msprop:Generator_ColumnPropNameInRow="Back_weight" msprop:Generator_ColumnVarNameInTable="columnBack_weight" msprop:Generator_ColumnPropNameInTable="Back_weightColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Conver_Rate" msprop:Generator_UserColumnName="Conver_Rate" msprop:Generator_ColumnPropNameInRow="Conver_Rate" msprop:Generator_ColumnVarNameInTable="columnConver_Rate" msprop:Generator_ColumnPropNameInTable="Conver_RateColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Ck_Square" msprop:Generator_UserColumnName="Ck_Square" msprop:Generator_ColumnPropNameInRow="Ck_Square" msprop:Generator_ColumnVarNameInTable="columnCk_Square" msprop:Generator_ColumnPropNameInTable="Ck_SquareColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Square_Num" msprop:Generator_UserColumnName="Square_Num" msprop:Generator_ColumnPropNameInRow="Square_Num" msprop:Generator_ColumnVarNameInTable="columnSquare_Num" msprop:Generator_ColumnPropNameInTable="Square_NumColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Ck_Freight" msprop:Generator_UserColumnName="Ck_Freight" msprop:Generator_ColumnPropNameInRow="Ck_Freight" msprop:Generator_ColumnVarNameInTable="columnCk_Freight" msprop:Generator_ColumnPropNameInTable="Ck_FreightColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Ck_Feed" msprop:Generator_UserColumnName="Ck_Feed" msprop:Generator_ColumnPropNameInRow="Ck_Feed" msprop:Generator_ColumnVarNameInTable="columnCk_Feed" msprop:Generator_ColumnPropNameInTable="Ck_FeedColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ECk_Cost" msprop:Generator_UserColumnName="ECk_Cost" msprop:Generator_ColumnPropNameInRow="ECk_Cost" msprop:Generator_ColumnVarNameInTable="columnECk_Cost" msprop:Generator_ColumnPropNameInTable="ECk_CostColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="FCk_Cost" msprop:Generator_UserColumnName="FCk_Cost" msprop:Generator_ColumnPropNameInRow="FCk_Cost" msprop:Generator_ColumnVarNameInTable="columnFCk_Cost" msprop:Generator_ColumnPropNameInTable="FCk_CostColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Feed_Cost" msprop:Generator_UserColumnName="Feed_Cost" msprop:Generator_ColumnPropNameInRow="Feed_Cost" msprop:Generator_ColumnVarNameInTable="columnFeed_Cost" msprop:Generator_ColumnPropNameInTable="Feed_CostColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Back_Cost" msprop:Generator_UserColumnName="Back_Cost" msprop:Generator_ColumnPropNameInRow="Back_Cost" msprop:Generator_ColumnVarNameInTable="columnBack_Cost" msprop:Generator_ColumnPropNameInTable="Back_CostColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Mulite_Exp" msprop:Generator_UserColumnName="Mulite_Exp" msprop:Generator_ColumnPropNameInRow="Mulite_Exp" msprop:Generator_ColumnVarNameInTable="columnMulite_Exp" msprop:Generator_ColumnPropNameInTable="Mulite_ExpColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Bal_Exp" msprop:Generator_UserColumnName="Bal_Exp" msprop:Generator_ColumnPropNameInRow="Bal_Exp" msprop:Generator_ColumnVarNameInTable="columnBal_Exp" msprop:Generator_ColumnPropNameInTable="Bal_ExpColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ECk_Rate" msprop:Generator_UserColumnName="ECk_Rate" msprop:Generator_ColumnPropNameInRow="ECk_Rate" msprop:Generator_ColumnVarNameInTable="columnECk_Rate" msprop:Generator_ColumnPropNameInTable="ECk_RateColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FCk_Rate" msprop:Generator_UserColumnName="FCk_Rate" msprop:Generator_ColumnPropNameInRow="FCk_Rate" msprop:Generator_ColumnVarNameInTable="columnFCk_Rate" msprop:Generator_ColumnPropNameInTable="FCk_RateColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Feed_Rate" msprop:Generator_UserColumnName="Feed_Rate" msprop:Generator_ColumnPropNameInRow="Feed_Rate" msprop:Generator_ColumnVarNameInTable="columnFeed_Rate" msprop:Generator_ColumnPropNameInTable="Feed_RateColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Back_Rate" msprop:Generator_UserColumnName="Back_Rate" msprop:Generator_ColumnPropNameInRow="Back_Rate" msprop:Generator_ColumnVarNameInTable="columnBack_Rate" msprop:Generator_ColumnPropNameInTable="Back_RateColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Mulite_Rate" msprop:Generator_UserColumnName="Mulite_Rate" msprop:Generator_ColumnPropNameInRow="Mulite_Rate" msprop:Generator_ColumnVarNameInTable="columnMulite_Rate" msprop:Generator_ColumnPropNameInTable="Mulite_RateColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Bal_Exp_Rate" msprop:Generator_UserColumnName="Bal_Exp_Rate" msprop:Generator_ColumnPropNameInRow="Bal_Exp_Rate" msprop:Generator_ColumnVarNameInTable="columnBal_Exp_Rate" msprop:Generator_ColumnPropNameInTable="Bal_Exp_RateColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Ck_Days" msprop:Generator_UserColumnName="Ck_Days" msprop:Generator_ColumnPropNameInRow="Ck_Days" msprop:Generator_ColumnVarNameInTable="columnCk_Days" msprop:Generator_ColumnPropNameInTable="Ck_DaysColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Chaff" msprop:Generator_UserColumnName="Chaff" msprop:Generator_ColumnPropNameInRow="Chaff" msprop:Generator_ColumnVarNameInTable="columnChaff" msprop:Generator_ColumnPropNameInTable="ChaffColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Disease_Pay" msprop:Generator_UserColumnName="Disease_Pay" msprop:Generator_ColumnPropNameInRow="Disease_Pay" msprop:Generator_ColumnVarNameInTable="columnDisease_Pay" msprop:Generator_ColumnPropNameInTable="Disease_PayColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Power_Bill" msprop:Generator_UserColumnName="Power_Bill" msprop:Generator_ColumnPropNameInRow="Power_Bill" msprop:Generator_ColumnVarNameInTable="columnPower_Bill" msprop:Generator_ColumnPropNameInTable="Power_BillColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="FirstStage" msprop:Generator_UserColumnName="FirstStage" msprop:Generator_ColumnPropNameInRow="FirstStage" msprop:Generator_ColumnVarNameInTable="columnFirstStage" msprop:Generator_ColumnPropNameInTable="FirstStageColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SecondStage" msprop:Generator_UserColumnName="SecondStage" msprop:Generator_ColumnPropNameInRow="SecondStage" msprop:Generator_ColumnVarNameInTable="columnSecondStage" msprop:Generator_ColumnPropNameInTable="SecondStageColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ThridStage" msprop:Generator_UserColumnName="ThridStage" msprop:Generator_ColumnPropNameInRow="ThridStage" msprop:Generator_ColumnVarNameInTable="columnThridStage" msprop:Generator_ColumnPropNameInTable="ThridStageColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FourthStage" msprop:Generator_UserColumnName="FourthStage" msprop:Generator_ColumnPropNameInRow="FourthStage" msprop:Generator_ColumnVarNameInTable="columnFourthStage" msprop:Generator_ColumnPropNameInTable="FourthStageColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CK_Medicine_R1" msprop:Generator_UserColumnName="CK_Medicine_R1" msprop:Generator_ColumnPropNameInRow="CK_Medicine_R1" msprop:Generator_ColumnVarNameInTable="columnCK_Medicine_R1" msprop:Generator_ColumnPropNameInTable="CK_Medicine_R1Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CK_Medicine_R2" msprop:Generator_UserColumnName="CK_Medicine_R2" msprop:Generator_ColumnPropNameInRow="CK_Medicine_R2" msprop:Generator_ColumnVarNameInTable="columnCK_Medicine_R2" msprop:Generator_ColumnPropNameInTable="CK_Medicine_R2Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CK_Medicine_R3" msprop:Generator_UserColumnName="CK_Medicine_R3" msprop:Generator_ColumnPropNameInRow="CK_Medicine_R3" msprop:Generator_ColumnVarNameInTable="columnCK_Medicine_R3" msprop:Generator_ColumnPropNameInTable="CK_Medicine_R3Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CK_Medicine_R4" msprop:Generator_UserColumnName="CK_Medicine_R4" msprop:Generator_ColumnPropNameInRow="CK_Medicine_R4" msprop:Generator_ColumnVarNameInTable="columnCK_Medicine_R4" msprop:Generator_ColumnPropNameInTable="CK_Medicine_R4Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CK_Medicine_R1Amt" msprop:Generator_UserColumnName="CK_Medicine_R1Amt" msprop:Generator_ColumnPropNameInRow="CK_Medicine_R1Amt" msprop:Generator_ColumnVarNameInTable="columnCK_Medicine_R1Amt" msprop:Generator_ColumnPropNameInTable="CK_Medicine_R1AmtColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="CK_Medicine_R2Amt" msprop:Generator_UserColumnName="CK_Medicine_R2Amt" msprop:Generator_ColumnPropNameInRow="CK_Medicine_R2Amt" msprop:Generator_ColumnVarNameInTable="columnCK_Medicine_R2Amt" msprop:Generator_ColumnPropNameInTable="CK_Medicine_R2AmtColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="CK_Medicine_R3Amt" msprop:Generator_UserColumnName="CK_Medicine_R3Amt" msprop:Generator_ColumnPropNameInRow="CK_Medicine_R3Amt" msprop:Generator_ColumnVarNameInTable="columnCK_Medicine_R3Amt" msprop:Generator_ColumnPropNameInTable="CK_Medicine_R3AmtColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="CK_Medicine_R4Amt" msprop:Generator_UserColumnName="CK_Medicine_R4Amt" msprop:Generator_ColumnPropNameInRow="CK_Medicine_R4Amt" msprop:Generator_ColumnVarNameInTable="columnCK_Medicine_R4Amt" msprop:Generator_ColumnPropNameInTable="CK_Medicine_R4AmtColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Subcontract_Pay" msprop:Generator_UserColumnName="Subcontract_Pay" msprop:Generator_ColumnPropNameInRow="Subcontract_Pay" msprop:Generator_ColumnVarNameInTable="columnSubcontract_Pay" msprop:Generator_ColumnPropNameInTable="Subcontract_PayColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="CatchCk_Pay" msprop:Generator_UserColumnName="CatchCk_Pay" msprop:Generator_ColumnPropNameInRow="CatchCk_Pay" msprop:Generator_ColumnVarNameInTable="columnCatchCk_Pay" msprop:Generator_ColumnPropNameInTable="CatchCk_PayColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="TrackAmt" msprop:Generator_UserColumnName="TrackAmt" msprop:Generator_ColumnPropNameInRow="TrackAmt" msprop:Generator_ColumnVarNameInTable="columnTrackAmt" msprop:Generator_ColumnPropNameInTable="TrackAmtColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="SumAmt" msprop:Generator_UserColumnName="SumAmt" msprop:Generator_ColumnPropNameInRow="SumAmt" msprop:Generator_ColumnVarNameInTable="columnSumAmt" msprop:Generator_ColumnPropNameInTable="SumAmtColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Remark" msprop:Generator_UserColumnName="Remark" msprop:Generator_ColumnPropNameInRow="Remark" msprop:Generator_ColumnVarNameInTable="columnRemark" msprop:Generator_ColumnPropNameInTable="RemarkColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FdList_ID" msprop:Generator_UserColumnName="FdList_ID" msprop:Generator_ColumnPropNameInRow="FdList_ID" msprop:Generator_ColumnVarNameInTable="columnFdList_ID" msprop:Generator_ColumnPropNameInTable="FdList_IDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Expr1" msprop:Generator_UserColumnName="Expr1" msprop:Generator_ColumnPropNameInRow="Expr1" msprop:Generator_ColumnVarNameInTable="columnExpr1" msprop:Generator_ColumnPropNameInTable="Expr1Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CkKind_List" msprop:Generator_UserColumnName="CkKind_List" msprop:Generator_ColumnPropNameInRow="CkKind_List" msprop:Generator_ColumnVarNameInTable="columnCkKind_List" msprop:Generator_ColumnPropNameInTable="CkKind_ListColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FatherCk" msprop:Generator_UserColumnName="FatherCk" msprop:Generator_ColumnPropNameInRow="FatherCk" msprop:Generator_ColumnVarNameInTable="columnFatherCk" msprop:Generator_ColumnPropNameInTable="FatherCkColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MotherCk" msprop:Generator_UserColumnName="MotherCk" msprop:Generator_ColumnPropNameInRow="MotherCk" msprop:Generator_ColumnVarNameInTable="columnMotherCk" msprop:Generator_ColumnPropNameInTable="MotherCkColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SumCk" msprop:Generator_UserColumnName="SumCk" msprop:Generator_ColumnPropNameInRow="SumCk" msprop:Generator_ColumnVarNameInTable="columnSumCk" msprop:Generator_ColumnPropNameInTable="SumCkColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="FatherCk_Avg" msprop:Generator_UserColumnName="FatherCk_Avg" msprop:Generator_ColumnPropNameInRow="FatherCk_Avg" msprop:Generator_ColumnVarNameInTable="columnFatherCk_Avg" msprop:Generator_ColumnPropNameInTable="FatherCk_AvgColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="MotherCk_Avg" msprop:Generator_UserColumnName="MotherCk_Avg" msprop:Generator_ColumnPropNameInRow="MotherCk_Avg" msprop:Generator_ColumnVarNameInTable="columnMotherCk_Avg" msprop:Generator_ColumnPropNameInTable="MotherCk_AvgColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Regard_Avg" msprop:Generator_UserColumnName="Regard_Avg" msprop:Generator_ColumnPropNameInRow="Regard_Avg" msprop:Generator_ColumnVarNameInTable="columnRegard_Avg" msprop:Generator_ColumnPropNameInTable="Regard_AvgColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Ck_Avg" msprop:Generator_UserColumnName="Ck_Avg" msprop:Generator_ColumnPropNameInRow="Ck_Avg" msprop:Generator_ColumnVarNameInTable="columnCk_Avg" msprop:Generator_ColumnPropNameInTable="Ck_AvgColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Expr2" msprop:Generator_UserColumnName="Expr2" msprop:Generator_ColumnPropNameInRow="Expr2" msprop:Generator_ColumnVarNameInTable="columnExpr2" msprop:Generator_ColumnPropNameInTable="Expr2Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Ckkind" msprop:Generator_UserColumnName="Ckkind" msprop:Generator_ColumnPropNameInRow="Ckkind" msprop:Generator_ColumnVarNameInTable="columnCkkind" msprop:Generator_ColumnPropNameInTable="CkkindColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ReturnQuantity" msprop:Generator_UserColumnName="ReturnQuantity" msprop:Generator_ColumnPropNameInRow="ReturnQuantity" msprop:Generator_ColumnVarNameInTable="columnReturnQuantity" msprop:Generator_ColumnPropNameInTable="ReturnQuantityColumn" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1">
+      <xs:selector xpath=".//mstns:V_FdCk" />
+      <xs:field xpath="mstns:FdCk_ID" />
+      <xs:field xpath="mstns:SerialID" />
+      <xs:field xpath="mstns:FdList_ID" />
+      <xs:field xpath="mstns:Expr1" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

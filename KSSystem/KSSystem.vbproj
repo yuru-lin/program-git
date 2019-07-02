@@ -1,0 +1,2382 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{55DB2EEB-076C-43C9-AE34-394EDD558CF4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>KSSystem.My.MyApplication</StartupObject>
+    <RootNamespace>KSSystem</RootNamespace>
+    <AssemblyName>KSSystem</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <ManifestCertificateThumbprint>7E930CEF1CEA18C12BF3611651419B8D394FF7E1</ManifestCertificateThumbprint>
+    <ManifestKeyFile>KSSystem_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <TargetZone>LocalIntranet</TargetZone>
+    <SignManifests>true</SignManifests>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>KSSystem.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>KSSystem.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DocumentationFile>KSSystem.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DocumentationFile>KSSystem.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>KSSystem.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>KSSystem.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.Office.Tools.Excel.v9.0, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.SqlServerCe.Client, Version=3.5.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files\Microsoft Visual Studio 9.0\Common7\IDE\Microsoft.SqlServerCe.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="msmdvbanet, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="PopupNotifier, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\PopupNotifier.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Windows\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="A_LogIn\Login_v001.Designer.vb">
+      <DependentUpon>Login_v001.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_LogIn\Login_v001.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_LogIn\PM_Lists.vb" />
+    <Compile Include="A_LogIn\變數資料.vb" />
+    <Compile Include="A_倉儲\入庫_作業\採購入庫_鮮享 V100.Designer.vb">
+      <DependentUpon>採購入庫_鮮享 V100.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_倉儲\入庫_作業\採購入庫_鮮享 V100.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_倉儲\入庫_作業\生產入庫V103.Designer.vb">
+      <DependentUpon>生產入庫V103.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_倉儲\入庫_作業\生產入庫V103.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_倉儲\入庫_作業\生產入庫自動化v100.Designer.vb">
+      <DependentUpon>生產入庫自動化v100.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_倉儲\入庫_作業\生產入庫自動化v100.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_倉儲\入庫_作業\生產入庫V102.Designer.vb">
+      <DependentUpon>生產入庫V102.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_倉儲\入庫_作業\生產入庫V102.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_倉儲\出庫_作業\Bak\C_SyncOutByExcel.Designer.vb">
+      <DependentUpon>C_SyncOutByExcel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_倉儲\出庫_作業\Bak\C_SyncOutByExcel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_倉儲\出庫_作業\派工\A_整合派工1.Designer.vb">
+      <DependentUpon>A_整合派工1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_倉儲\出庫_作業\派工\A_整合派工1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_倉儲\出庫_作業\派工\A_整合派工2.Designer.vb">
+      <DependentUpon>A_整合派工2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_倉儲\出庫_作業\派工\A_整合派工2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_倉儲\出庫_作業\派工\排程領料\分時生管V001.Designer.vb">
+      <DependentUpon>分時生管V001.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_倉儲\出庫_作業\派工\排程領料\分時生管V001.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_倉儲\出庫_作業\派工\排程領料\分時領料V002.Designer.vb">
+      <DependentUpon>分時領料V002.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_倉儲\出庫_作業\派工\排程領料\分時領料V002.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_倉儲\出庫_作業\派工\排程領料\條碼列印V100.Designer.vb">
+      <DependentUpon>條碼列印V100.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_倉儲\出庫_作業\派工\排程領料\條碼列印V100.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_倉儲\出庫_作業\出庫作業V002.Designer.vb">
+      <DependentUpon>出庫作業V002.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_倉儲\出庫_作業\出庫作業V002.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_倉儲\同步_作業\PDA同步V101.Designer.vb">
+      <DependentUpon>PDA同步V101.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_倉儲\同步_作業\PDA同步V101.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_倉儲\入庫_作業\生產入庫V101.Designer.vb">
+      <DependentUpon>生產入庫V101.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_倉儲\入庫_作業\生產入庫V101.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_倉儲\同步_作業\PDA同步V103.Designer.vb">
+      <DependentUpon>PDA同步V103.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_倉儲\同步_作業\PDA同步V103.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_倉儲\出庫_作業\出庫作業V001.Designer.vb">
+      <DependentUpon>出庫作業V001.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_倉儲\出庫_作業\出庫作業V001.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_倉儲\同步_作業\PDA同步V104-鮮享.Designer.vb">
+      <DependentUpon>PDA同步V104-鮮享.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_倉儲\同步_作業\PDA同步V104-鮮享.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_倉儲\查詢_庫存\v001驗收及領料及加工庫存查詢.Designer.vb">
+      <DependentUpon>v001驗收及領料及加工庫存查詢.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_倉儲\查詢_庫存\v001驗收及領料及加工庫存查詢.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_倉儲\查詢_庫存\時段入庫比對.Designer.vb">
+      <DependentUpon>時段入庫比對.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_倉儲\查詢_庫存\時段入庫比對.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_倉儲\查詢_現場\訂單自動比對V100.Designer.vb">
+      <DependentUpon>訂單自動比對V100.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_倉儲\查詢_現場\訂單自動比對V100.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_倉儲\調庫_作業\指定入庫v001.Designer.vb">
+      <DependentUpon>指定入庫v001.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_倉儲\調庫_作業\指定入庫v001.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_倉儲\調庫_作業\調庫作業V101.Designer.vb">
+      <DependentUpon>調庫作業V101.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_倉儲\調庫_作業\調庫作業V101.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_倉儲\鮮享\代工轉入庫及出庫條碼.Designer.vb">
+      <DependentUpon>代工轉入庫及出庫條碼.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_倉儲\鮮享\代工轉入庫及出庫條碼.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_倉儲\鮮享\代工轉入生產.Designer.vb">
+      <DependentUpon>代工轉入生產.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_倉儲\鮮享\代工轉入生產.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_加工\製程_記錄\0_01製程基本標準.Designer.vb">
+      <DependentUpon>0_01製程基本標準.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_加工\製程_記錄\0_01製程基本標準.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_加工\製程_記錄\0_02製程基本標準.Designer.vb">
+      <DependentUpon>0_02製程基本標準.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_加工\製程_記錄\0_02製程基本標準.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_品管\查詢\v001檢查記錄.Designer.vb">
+      <DependentUpon>v001檢查記錄.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_品管\查詢\v001檢查記錄.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_品管\退貨\退貨統計V100.Designer.vb">
+      <DependentUpon>退貨統計V100.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_品管\退貨\退貨統計V100.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_品管\退貨\退貨記錄V100.Designer.vb">
+      <DependentUpon>退貨記錄V100.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_品管\退貨\退貨記錄V100.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_會計\發票\v001發票作廢作業.Designer.vb">
+      <DependentUpon>v001發票作廢作業.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_會計\發票\v001發票作廢作業.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_會計\發票\發票比對作業v001.Designer.vb">
+      <DependentUpon>發票比對作業v001.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_會計\發票\發票比對作業v001.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_測試\Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_測試\Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_營業\基礎資料\客戶品項V100.Designer.vb">
+      <DependentUpon>客戶品項V100.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_營業\基礎資料\客戶品項V100.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_營業\基礎資料\客戶變價V100.Designer.vb">
+      <DependentUpon>客戶變價V100.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_營業\基礎資料\客戶變價V100.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_營業\契養作業\製單對照\製單對照表.Designer.vb">
+      <DependentUpon>製單對照表.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_營業\契養作業\製單對照\製單對照表.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_營業\查詢\v001出貨單查詢.Designer.vb">
+      <DependentUpon>v001出貨單查詢.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_營業\查詢\v001出貨單查詢.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_營業\發票作業\v002發票查詢列印.Designer.vb">
+      <DependentUpon>v002發票查詢列印.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_營業\發票作業\v002發票查詢列印.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_營業\訂單作業\上傳訂單統計V001.Designer.vb">
+      <DependentUpon>上傳訂單統計V001.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_營業\訂單作業\上傳訂單統計V001.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_營業\訂單作業\單據重量列印V001.Designer.vb">
+      <DependentUpon>單據重量列印V001.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_營業\訂單作業\單據重量列印V001.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_營業\訂單作業\營業訂單V101.Designer.vb">
+      <DependentUpon>營業訂單V101.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_營業\訂單作業\營業訂單V101.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_營業\訂單作業\營業訂單V102.Designer.vb">
+      <DependentUpon>營業訂單V102.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_營業\訂單作業\營業訂單V102.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_營業\訂單作業\營業訂單V103.Designer.vb">
+      <DependentUpon>營業訂單V103.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_營業\訂單作業\營業訂單V103.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_營業\訂單作業\營業訂單V104.Designer.vb">
+      <DependentUpon>營業訂單V104.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_營業\訂單作業\營業訂單V104.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_營業\訂單作業\訂單上傳作業.Designer.vb">
+      <DependentUpon>訂單上傳作業.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_營業\訂單作業\訂單上傳作業.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_營業\訂單作業\訂單回傳2_作業.Designer.vb">
+      <DependentUpon>訂單回傳2_作業.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_營業\訂單作業\訂單回傳2_作業.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_營業\訂單作業\訂單回傳1_作業.Designer.vb">
+      <DependentUpon>訂單回傳1_作業.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_營業\訂單作業\訂單回傳1_作業.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutForm.Designer.vb">
+      <DependentUpon>AboutForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AboutForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="AutoUpdate.vb" />
+    <Compile Include="A_營業\訂單作業\退貨作業\退貨作業V100.Designer.vb">
+      <DependentUpon>退貨作業V100.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_營業\訂單作業\退貨作業\退貨作業V100.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_倉儲\入庫_作業\退貨入庫V100.Designer.vb">
+      <DependentUpon>退貨入庫V100.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_倉儲\入庫_作業\退貨入庫V100.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_營業\訂單作業\退貨作業\退貨程式碼V100.vb" />
+    <Compile Include="A_營業\預估\數量差異表.Designer.vb">
+      <DependentUpon>數量差異表.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_營業\預估\數量差異表.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_營業\預估\預估訂單數量V101.Designer.vb">
+      <DependentUpon>預估訂單數量V101.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_營業\預估\預估訂單數量V101.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_營業\預估\預估訂單數量V100.Designer.vb">
+      <DependentUpon>預估訂單數量V100.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_營業\預估\預估訂單數量V100.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_生管\BOM\電宰基本BOM.Designer.vb">
+      <DependentUpon>電宰基本BOM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_生管\BOM\電宰基本BOM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_生管\排程\v001訂單轉排程.Designer.vb">
+      <DependentUpon>v001訂單轉排程.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_生管\排程\v001訂單轉排程.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_生管\排程\排程顯示v001.Designer.vb">
+      <DependentUpon>排程顯示v001.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_生管\排程\排程顯示v001.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_生管\排程\生產排程改-生管.Designer.vb">
+      <DependentUpon>生產排程改-生管.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_生管\排程\生產排程改-生管.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_生管\排程\v002訂單轉排程.Designer.vb">
+      <DependentUpon>v002訂單轉排程.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_生管\排程\v002訂單轉排程.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_生管\排程\生產需求設定V001.Designer.vb">
+      <DependentUpon>生產需求設定V001.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_生管\排程\生產需求設定V001.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_生管\排程\線上撿貨V001.Designer.vb">
+      <DependentUpon>線上撿貨V001.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_生管\排程\線上撿貨V001.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_生管\查詢\v001冷藏貨庫存查詢表.designer.vb">
+      <DependentUpon>v001冷藏貨庫存查詢表.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_生管\查詢\v001冷藏貨庫存查詢表.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_生管\查詢\v001產程明細表.Designer.vb">
+      <DependentUpon>v001產程明細表.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_生管\查詢\v001產程明細表.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_生管\查詢\加工原料肉領料單.Designer.vb">
+      <DependentUpon>加工原料肉領料單.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_生管\查詢\加工原料肉領料單.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_生管\查詢\生產產成計算.Designer.vb">
+      <DependentUpon>生產產成計算.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_生管\查詢\生產產成計算.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_生管\查詢\產程明細列印Print.vb" />
+    <Compile Include="A_生管\比對\比對表_v100.Designer.vb">
+      <DependentUpon>比對表_v100.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_生管\比對\比對表_v100.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_生管\磅秤\現場磅秤資訊V001.Designer.vb">
+      <DependentUpon>現場磅秤資訊V001.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_生管\磅秤\現場磅秤資訊V001.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_生管\磅秤\磅秤品項設定v101.Designer.vb">
+      <DependentUpon>磅秤品項設定v101.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_生管\磅秤\磅秤品項設定v101.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_生管\通用\生產需求統計v001.Designer.vb">
+      <DependentUpon>生產需求統計v001.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_生管\通用\生產需求統計v001.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_生管\通用\生產需求計算程式.Designer.vb">
+      <DependentUpon>生產需求計算程式.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_生管\通用\生產需求計算程式.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_職安\v001健檢數據資料.Designer.vb">
+      <DependentUpon>v001健檢數據資料.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_職安\v001健檢數據資料.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_薪資\0032v001工時統計表.Designer.vb">
+      <DependentUpon>0032v001工時統計表.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_薪資\0032v001工時統計表.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_薪資\計件\計件計算V102.Designer.vb">
+      <DependentUpon>計件計算V102.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_薪資\計件\計件計算V102.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_薪資\計件\計件計算V101.Designer.vb">
+      <DependentUpon>計件計算V101.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_薪資\計件\計件計算V101.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_倉儲\鮮享\草稿單入庫轉入.Designer.vb">
+      <DependentUpon>草稿單入庫轉入.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_倉儲\鮮享\草稿單入庫轉入.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_倉儲\鮮享\交貨單轉出與轉入.Designer.vb">
+      <DependentUpon>交貨單轉出與轉入.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_倉儲\鮮享\交貨單轉出與轉入.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_薪資\計薪Print.vb" />
+    <Compile Include="B_通用\v001存領單查詢.designer.vb">
+      <DependentUpon>v001存領單查詢.vb</DependentUpon>
+    </Compile>
+    <Compile Include="B_通用\v001存領單查詢.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="B_通用\內部記錄.Designer.vb">
+      <DependentUpon>內部記錄.vb</DependentUpon>
+    </Compile>
+    <Compile Include="B_通用\內部記錄.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_營業\預估\Class\AutoPrint.vb" />
+    <Compile Include="A_營業\空籃作業\A_AddEBadjust.Designer.vb">
+      <DependentUpon>A_AddEBadjust.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_營業\空籃作業\A_AddEBadjust.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_營業\契養作業\A_ContractFarms.Designer.vb">
+      <DependentUpon>A_ContractFarms.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_營業\契養作業\A_ContractFarms.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_營業\契養作業\A_ContractSettlement.Designer.vb">
+      <DependentUpon>A_ContractSettlement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_營業\契養作業\A_ContractSettlement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group A\A_DriversFee.Designer.vb">
+      <DependentUpon>A_DriversFee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group A\A_DriversFee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_營業\空籃作業\A_EBin.Designer.vb">
+      <DependentUpon>A_EBin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_營業\空籃作業\A_EBin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group A\A_ORDR.Designer.vb">
+      <DependentUpon>A_ORDR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group A\A_ORDR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_營業\空籃作業\A_QueryEB.Designer.vb">
+      <DependentUpon>A_QueryEB.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_營業\空籃作業\A_QueryEB.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group A\A_QueryODLN.Designer.vb">
+      <DependentUpon>A_QueryODLN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group A\A_QueryODLN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group A\EC出貨表單列印\A_EC_List.Designer.vb">
+      <DependentUpon>A_EC_List.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group A\EC出貨表單列印\A_EC_List.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="B_通用\存領申請EC\A_ECStockApplyList.Designer.vb">
+      <DependentUpon>A_ECStockApplyList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="B_通用\存領申請EC\A_ECStockApplyList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group A\EC宅配單列印\A_TransPaper_List.Designer.vb">
+      <DependentUpon>A_TransPaper_List.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group A\EC宅配單列印\A_TransPaper_List.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group A\EC進價維護\A_ECPrice.Designer.vb">
+      <DependentUpon>A_ECPrice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group A\EC進價維護\A_ECPrice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group A\EC進價維護\A_ECPriceExamine.Designer.vb">
+      <DependentUpon>A_ECPriceExamine.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group A\EC進價維護\A_ECPriceExamine.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group A\EC進價維護\A_ECPriceList.Designer.vb">
+      <DependentUpon>A_ECPriceList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group A\EC進價維護\A_ECPriceList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group A\報表\A_ReportViewer.Designer.vb">
+      <DependentUpon>A_ReportViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group A\報表\A_ReportViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group A\A_SalesFee.Designer.vb">
+      <DependentUpon>A_SalesFee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group A\A_SalesFee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group A\A_Scheduling.Designer.vb">
+      <DependentUpon>A_Scheduling.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group A\A_Scheduling.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_營業\空籃作業\A_UpdateEBadjust.Designer.vb">
+      <DependentUpon>A_UpdateEBadjust.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_營業\空籃作業\A_UpdateEBadjust.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_營業\空籃作業\A_UpdateEBin.Designer.vb">
+      <DependentUpon>A_UpdateEBin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_營業\空籃作業\A_UpdateEBin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group A\員購價維護相關\A_WelfarePrice.Designer.vb">
+      <DependentUpon>A_WelfarePrice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group A\員購價維護相關\A_WelfarePrice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group A\員購價維護相關\A_WelfarePriceExamine.Designer.vb">
+      <DependentUpon>A_WelfarePriceExamine.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group A\員購價維護相關\A_WelfarePriceExamine.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group A\員購價維護相關\A_WelfarePriceList.Designer.vb">
+      <DependentUpon>A_WelfarePriceList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group A\員購價維護相關\A_WelfarePriceList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group A\外部人員基本資料\A_OutSideEmpBasicData.Designer.vb">
+      <DependentUpon>A_OutSideEmpBasicData.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group A\外部人員基本資料\A_OutSideEmpBasicData.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group A\外部人員基本資料\A_OutSideEmpBasicDataList.Designer.vb">
+      <DependentUpon>A_OutSideEmpBasicDataList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group A\外部人員基本資料\A_OutSideEmpBasicDataList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group A\快速回傳B1\A_AUTO_ORDR.Designer.vb">
+      <DependentUpon>A_AUTO_ORDR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group A\快速回傳B1\A_AUTO_ORDR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group A\快速回傳B1\A_Welfare_List.Designer.vb">
+      <DependentUpon>A_Welfare_List.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group A\快速回傳B1\A_Welfare_List.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group B\B_AddFinishItem.Designer.vb">
+      <DependentUpon>B_AddFinishItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group B\B_AddFinishItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group B\B_AddSchedule.Designer.vb">
+      <DependentUpon>B_AddSchedule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group B\B_AddSchedule.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group B\B_AddTransportation.Designer.vb">
+      <DependentUpon>B_AddTransportation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group B\B_AddTransportation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_生管\通用\B_CalcBomNeeds.Designer.vb">
+      <DependentUpon>B_CalcBomNeeds.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_生管\通用\B_CalcBomNeeds.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group B\B_CalcMelts.Designer.vb">
+      <DependentUpon>B_CalcMelts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group B\B_CalcMelts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group B\v001毛雞預估查詢.Designer.vb">
+      <DependentUpon>v001毛雞預估查詢.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group B\v001毛雞預估查詢.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_LogIn\列印Print.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Group B\計算產出率v001.Designer.vb">
+      <DependentUpon>計算產出率v001.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group B\計算產出率v001.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_生管\排程\B_OrderPicking.Designer.vb">
+      <DependentUpon>B_OrderPicking.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_生管\排程\B_OrderPicking.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_生管\排程\B_OSPdata.Designer.vb">
+      <DependentUpon>B_OSPdata.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_生管\排程\B_OSPdata.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group B\B_QckAddOIGE.Designer.vb">
+      <DependentUpon>B_QckAddOIGE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group B\B_QckAddOIGE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group B\ScaleOITM\ScaleOITM2.Designer.vb">
+      <DependentUpon>ScaleOITM2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group B\ScaleOITM\ScaleOITM2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_生管\排程\生產排程v001.Designer.vb">
+      <DependentUpon>生產排程v001.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_生管\排程\生產排程v001.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_生管\磅秤\磅秤品項設定v100.Designer.vb">
+      <DependentUpon>磅秤品項設定v100.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_生管\磅秤\磅秤品項設定v100.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group B\代工快速領料作業.Designer.vb">
+      <DependentUpon>代工快速領料作業.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group B\代工快速領料作業.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group B\領料單\B_QckAddOIGEv2.Designer.vb">
+      <DependentUpon>B_QckAddOIGEv2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group B\領料單\B_QckAddOIGEv2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group B\領料單\B_QckAddOIGEv3.Designer.vb">
+      <DependentUpon>B_QckAddOIGEv3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group B\領料單\B_QckAddOIGEv3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group B\B_QckAddOWOR.Designer.vb">
+      <DependentUpon>B_QckAddOWOR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group B\B_QckAddOWOR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group B\快速回填生產訂單v001.Designer.vb">
+      <DependentUpon>快速回填生產訂單v001.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group B\快速回填生產訂單v001.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group B\B_QckUpdateTransPrice.Designer.vb">
+      <DependentUpon>B_QckUpdateTransPrice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group B\B_QckUpdateTransPrice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group B\B_QueryFinishedORDR.Designer.vb">
+      <DependentUpon>B_QueryFinishedORDR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group B\B_QueryFinishedORDR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group B\B_QueryOIGE.Designer.vb">
+      <DependentUpon>B_QueryOIGE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group B\B_QueryOIGE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group B\B_QueryOIGEByU_CK02.Designer.vb">
+      <DependentUpon>B_QueryOIGEByU_CK02.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group B\B_QueryOIGEByU_CK02.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group B\查詢生產訂單v001.Designer.vb">
+      <DependentUpon>查詢生產訂單v001.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group B\查詢生產訂單v001.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group B\B_QueryOutside.Designer.vb">
+      <DependentUpon>B_QueryOutside.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group B\B_QueryOutside.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group B\B_QueryPickingItem.Designer.vb">
+      <DependentUpon>B_QueryPickingItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group B\B_QueryPickingItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group B\B_QuerySchedule.Designer.vb">
+      <DependentUpon>B_QuerySchedule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group B\B_QuerySchedule.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group B\毛雞運輸日報表v001.Designer.vb">
+      <DependentUpon>毛雞運輸日報表v001.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group B\毛雞運輸日報表v001.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group B\B_UpdateSchedule.Designer.vb">
+      <DependentUpon>B_UpdateSchedule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group B\B_UpdateSchedule.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group B\B_UpdateTransportation.Designer.vb">
+      <DependentUpon>B_UpdateTransportation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group B\B_UpdateTransportation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group B\B_Whours.Designer.vb">
+      <DependentUpon>B_Whours.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group B\B_Whours.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group B\B_QckAddOIGEv5.Designer.vb">
+      <DependentUpon>B_QckAddOIGEv5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group B\B_QckAddOIGEv5.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_倉儲\出庫_作業\派工\排程領料\扣帳作業.Designer.vb">
+      <DependentUpon>扣帳作業.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_倉儲\出庫_作業\派工\排程領料\扣帳作業.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_倉儲\出庫_作業\派工\派工作業.Designer.vb">
+      <DependentUpon>派工作業.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_倉儲\出庫_作業\派工\派工作業.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group C\儲位管理\儲位基本資料維護\StorePlaceBasicData.Designer.vb">
+      <DependentUpon>StorePlaceBasicData.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group C\儲位管理\儲位基本資料維護\StorePlaceBasicData.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group C\儲位管理\查單庫位資料.Designer.vb">
+      <DependentUpon>查單庫位資料.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group C\儲位管理\查單庫位資料.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group C\儲位管理\查條碼明細.Designer.vb">
+      <DependentUpon>查條碼明細.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group C\儲位管理\查條碼明細.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_倉儲\入庫_作業\生產入庫V100.Designer.vb">
+      <DependentUpon>生產入庫V100.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_倉儲\入庫_作業\生產入庫V100.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group C\出庫\C_出庫.Designer.vb">
+      <DependentUpon>C_出庫.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group C\出庫\C_出庫.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group C\儲位管理\C_BatchChangeSpace.Designer.vb">
+      <DependentUpon>C_BatchChangeSpace.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group C\儲位管理\C_BatchChangeSpace.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group C\儲位管理\C_ChangeSpace.Designer.vb">
+      <DependentUpon>C_ChangeSpace.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group C\儲位管理\C_ChangeSpace.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_倉儲\入庫_作業\C_生產入庫舊.Designer.vb">
+      <DependentUpon>C_生產入庫舊.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_倉儲\入庫_作業\C_生產入庫舊.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_倉儲\入庫_作業\C_採購入庫.Designer.vb">
+      <DependentUpon>C_採購入庫.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_倉儲\入庫_作業\C_採購入庫.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group C\C_Inquiry\C_Inquiry_001.Designer.vb">
+      <DependentUpon>C_Inquiry_001.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group C\C_Inquiry\C_Inquiry_001.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_倉儲\出庫_作業\Bak\C_OutB1.Designer.vb">
+      <DependentUpon>C_OutB1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_倉儲\出庫_作業\Bak\C_OutB1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group C\C_Print_Batch.Designer.vb">
+      <DependentUpon>C_Print_Batch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group C\C_Print_Batch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group C\C_Print_Single.Designer.vb">
+      <DependentUpon>C_Print_Single.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group C\C_Print_Single.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group C\C_QckAddChickenOutOIGE.Designer.vb">
+      <DependentUpon>C_QckAddChickenOutOIGE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group C\C_QckAddChickenOutOIGE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group C\C_QueryAllocateWplace.Designer.vb">
+      <DependentUpon>C_QueryAllocateWplace.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group C\C_QueryAllocateWplace.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group C\儲位管理\C_QueryChangeSpace.Designer.vb">
+      <DependentUpon>C_QueryChangeSpace.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group C\儲位管理\C_QueryChangeSpace.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group C\C_QueryFIMainDetail.Designer.vb">
+      <DependentUpon>C_QueryFIMainDetail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group C\C_QueryFIMainDetail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group C\C_QueryFIMainStatus.Designer.vb">
+      <DependentUpon>C_QueryFIMainStatus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group C\C_QueryFIMainStatus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group C\C_QueryFromSpace.Designer.vb">
+      <DependentUpon>C_QueryFromSpace.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group C\C_QueryFromSpace.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group C\出庫\未入庫清單.Designer.vb">
+      <DependentUpon>未入庫清單.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group C\出庫\未入庫清單.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group C\庫位\指定人庫.Designer.vb">
+      <DependentUpon>指定人庫.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group C\庫位\指定人庫.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group C\查詢用\C_QuerySRNDetail.Designer.vb">
+      <DependentUpon>C_QuerySRNDetail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group C\查詢用\C_QuerySRNDetail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group C\查詢用\C_QuerySRNFromDraft.Designer.vb">
+      <DependentUpon>C_QuerySRNFromDraft.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group C\查詢用\C_QuerySRNFromDraft.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group C\C_QuerySRNInPDAIn.Designer.vb">
+      <DependentUpon>C_QuerySRNInPDAIn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group C\C_QuerySRNInPDAIn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_倉儲\出庫_作業\出庫作業V100.Designer.vb">
+      <DependentUpon>出庫作業V100.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_倉儲\出庫_作業\出庫作業V100.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_倉儲\查詢_庫存\庫存入庫比對.Designer.vb">
+      <DependentUpon>庫存入庫比對.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_倉儲\查詢_庫存\庫存入庫比對.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group C\C_QuerySRNStatus.Designer.vb">
+      <DependentUpon>C_QuerySRNStatus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group C\C_QuerySRNStatus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group C\C_QuerySRNTradesDetail.Designer.vb">
+      <DependentUpon>C_QuerySRNTradesDetail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group C\C_QuerySRNTradesDetail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group C\庫位\C_QuerySuggestWplace.Designer.vb">
+      <DependentUpon>C_QuerySuggestWplace.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group C\庫位\C_QuerySuggestWplace.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group C\庫位\C_QueryWplaceStatus.Designer.vb">
+      <DependentUpon>C_QueryWplaceStatus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group C\庫位\C_QueryWplaceStatus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_倉儲\入庫_作業\C_特殊入庫.Designer.vb">
+      <DependentUpon>C_特殊入庫.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_倉儲\入庫_作業\C_特殊入庫.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group C\C_STSForInv.Designer.vb">
+      <DependentUpon>C_STSForInv.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group C\C_STSForInv.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_倉儲\同步_作業\Excel讀取轉入.Designer.vb">
+      <DependentUpon>Excel讀取轉入.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_倉儲\同步_作業\Excel讀取轉入.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group C\查詢用\C_查詢出庫資料.Designer.vb">
+      <DependentUpon>C_查詢出庫資料.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group C\查詢用\C_查詢出庫資料.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_倉儲\查詢_庫存\查庫位品項.Designer.vb">
+      <DependentUpon>查庫位品項.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_倉儲\查詢_庫存\查庫位品項.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_倉儲\查詢_庫存\查庫存_G.Designer.vb">
+      <DependentUpon>查庫存_G.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_倉儲\查詢_庫存\查庫存_G.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_倉儲\出庫_作業\派工\A_文件查庫存.Designer.vb">
+      <DependentUpon>A_文件查庫存.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_倉儲\出庫_作業\派工\A_文件查庫存.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group D\D_AccMainFrom.Designer.vb">
+      <DependentUpon>D_AccMainFrom.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group D\D_AccMainFrom.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group D\D_AccReport.Designer.vb">
+      <DependentUpon>D_AccReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group D\D_AccReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group D\D_AllJournal.Designer.vb">
+      <DependentUpon>D_AllJournal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group D\D_AllJournal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group D\D_CompareFrom.Designer.vb">
+      <DependentUpon>D_CompareFrom.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group D\D_CompareFrom.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group D\D_CostcoPayment.Designer.vb">
+      <DependentUpon>D_CostcoPayment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group D\D_CostcoPayment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group D\D_JournalCheck.Designer.vb">
+      <DependentUpon>D_JournalCheck.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group D\D_JournalCheck.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group D\D_SellToSave.Designer.vb">
+      <DependentUpon>D_SellToSave.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group D\D_SellToSave.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group D\Loading.designer.vb">
+      <DependentUpon>Loading.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group D\Loading.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group E\E_PaymentForm.Designer.vb">
+      <DependentUpon>E_PaymentForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group E\E_PaymentForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group E\E_QckAddOPOR.Designer.vb">
+      <DependentUpon>E_QckAddOPOR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group E\E_QckAddOPOR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group E\E_ReportViewer.Designer.vb">
+      <DependentUpon>E_ReportViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group E\E_ReportViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group Z\Z_OQUT.Designer.vb">
+      <DependentUpon>Z_OQUT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group Z\Z_OQUT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="B_通用\Z_StockApply.Designer.vb">
+      <DependentUpon>Z_StockApply.vb</DependentUpon>
+    </Compile>
+    <Compile Include="B_通用\Z_StockApply.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="B_通用\Z_StockApplyList.Designer.vb">
+      <DependentUpon>Z_StockApplyList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="B_通用\Z_StockApplyList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group Z\報表\Z_ReportViewer.Designer.vb">
+      <DependentUpon>Z_ReportViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group Z\報表\Z_ReportViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_LogIn\LoginUser.vb" />
+    <Compile Include="A_LogIn\MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_LogIn\MainForm.Designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_LogIn\MainMenuList.Designer.vb">
+      <DependentUpon>MainMenuList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A_LogIn\MainMenuList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage\IDMgn.Designer.vb">
+      <DependentUpon>IDMgn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\IDMgn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage\UP2Mgn.Designer.vb">
+      <DependentUpon>UP2Mgn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manage\UP2Mgn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modStrTools.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="publicFunction.vb" />
+    <Compile Include="ReportDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReportDataSet.vb">
+      <DependentUpon>ReportDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SelectCustForFarm.Designer.vb">
+      <DependentUpon>SelectCustForFarm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SelectCustForFarm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectFarmName.Designer.vb">
+      <DependentUpon>SelectFarmName.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SelectFarmName.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectItem.Designer.vb">
+      <DependentUpon>SelectItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SelectItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectName.Designer.vb">
+      <DependentUpon>SelectName.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SelectName.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings.vb" />
+    <Compile Include="testFrom.Designer.vb">
+      <DependentUpon>testFrom.vb</DependentUpon>
+    </Compile>
+    <Compile Include="testFrom.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group B\報表\B_ReportViewer.Designer.vb">
+      <DependentUpon>B_ReportViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Group B\報表\B_ReportViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToExcel.vb" />
+    <Compile Include="契養\FdCkCloseID.Designer.vb">
+      <DependentUpon>FdCkCloseID.vb</DependentUpon>
+    </Compile>
+    <Compile Include="契養\FdCkCloseID.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="契養\FdCkReportView.Designer.vb">
+      <DependentUpon>FdCkReportView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="契養\FdCkReportView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="契養\FdCkSettle.Designer.vb">
+      <DependentUpon>FdCkSettle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="契養\FdCkSettle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="契養\FdCk_Expense.Designer.vb">
+      <DependentUpon>FdCk_Expense.vb</DependentUpon>
+    </Compile>
+    <Compile Include="契養\FdCk_Expense.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="契養\FdCk_Kind.Designer.vb">
+      <DependentUpon>FdCk_Kind.vb</DependentUpon>
+    </Compile>
+    <Compile Include="契養\FdCk_Kind.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="契養\KaiShingPlugDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KaiShingPlugDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="契養\KaiShingPlugDataSet.vb">
+      <DependentUpon>KaiShingPlugDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="褔利社\ScaleOITM_褔利社.Designer.vb">
+      <DependentUpon>ScaleOITM_褔利社.vb</DependentUpon>
+    </Compile>
+    <Compile Include="褔利社\ScaleOITM_褔利社.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="褔利社\Z_Welfare_List.Designer.vb">
+      <DependentUpon>Z_Welfare_List.vb</DependentUpon>
+    </Compile>
+    <Compile Include="褔利社\Z_Welfare_List.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="褔利社\員購訂單.Designer.vb">
+      <DependentUpon>員購訂單.vb</DependentUpon>
+    </Compile>
+    <Compile Include="褔利社\員購訂單.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="記錄表格\倉儲\倉儲記錄.Designer.vb">
+      <DependentUpon>倉儲記錄.vb</DependentUpon>
+    </Compile>
+    <Compile Include="記錄表格\倉儲\倉儲記錄.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="記錄表格\倉儲\倉儲記錄2.Designer.vb">
+      <DependentUpon>倉儲記錄2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="記錄表格\倉儲\倉儲記錄2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="記錄表格\倉儲\急速條碼.Designer.vb">
+      <DependentUpon>急速條碼.vb</DependentUpon>
+    </Compile>
+    <Compile Include="記錄表格\倉儲\急速條碼.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="記錄表格\生產\屠宰記錄.Designer.vb">
+      <DependentUpon>屠宰記錄.vb</DependentUpon>
+    </Compile>
+    <Compile Include="記錄表格\生產\屠宰記錄.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="A_LogIn\Login_v001.resx">
+      <DependentUpon>Login_v001.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_倉儲\入庫_作業\採購入庫_鮮享 V100.resx">
+      <DependentUpon>採購入庫_鮮享 V100.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_倉儲\入庫_作業\生產入庫V103.resx">
+      <DependentUpon>生產入庫V103.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_倉儲\入庫_作業\生產入庫自動化v100.resx">
+      <DependentUpon>生產入庫自動化v100.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_倉儲\入庫_作業\生產入庫V102.resx">
+      <DependentUpon>生產入庫V102.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_倉儲\出庫_作業\Bak\C_SyncOutByExcel.resx">
+      <DependentUpon>C_SyncOutByExcel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_倉儲\出庫_作業\派工\A_整合派工1.resx">
+      <DependentUpon>A_整合派工1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_倉儲\出庫_作業\派工\A_整合派工2.resx">
+      <DependentUpon>A_整合派工2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_倉儲\出庫_作業\派工\排程領料\分時生管V001.resx">
+      <DependentUpon>分時生管V001.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_倉儲\出庫_作業\派工\排程領料\分時領料V002.resx">
+      <DependentUpon>分時領料V002.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_倉儲\出庫_作業\派工\排程領料\條碼列印V100.resx">
+      <DependentUpon>條碼列印V100.vb</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="A_倉儲\報表\派工列印.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="A_倉儲\出庫_作業\出庫作業V002.resx">
+      <DependentUpon>出庫作業V002.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_倉儲\同步_作業\PDA同步V101.resx">
+      <DependentUpon>PDA同步V101.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_倉儲\入庫_作業\生產入庫V101.resx">
+      <DependentUpon>生產入庫V101.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_倉儲\同步_作業\PDA同步V103.resx">
+      <DependentUpon>PDA同步V103.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_倉儲\出庫_作業\出庫作業V001.resx">
+      <DependentUpon>出庫作業V001.vb</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="A_倉儲\報表\派工列印v2.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="A_倉儲\報表\急速調庫.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="A_倉儲\報表\急速調庫-中.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="A_倉儲\報表\急速調庫A6.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="A_倉儲\報表\急速調庫A5.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="A_倉儲\同步_作業\PDA同步V104-鮮享.resx">
+      <DependentUpon>PDA同步V104-鮮享.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_倉儲\查詢_庫存\v001驗收及領料及加工庫存查詢.resx">
+      <DependentUpon>v001驗收及領料及加工庫存查詢.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_倉儲\查詢_庫存\時段入庫比對.resx">
+      <DependentUpon>時段入庫比對.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_倉儲\查詢_現場\訂單自動比對V100.resx">
+      <DependentUpon>訂單自動比對V100.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_倉儲\調庫_作業\指定入庫v001.resx">
+      <DependentUpon>指定入庫v001.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_倉儲\調庫_作業\調庫作業V101.resx">
+      <DependentUpon>調庫作業V101.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_倉儲\鮮享\代工轉入庫及出庫條碼.resx">
+      <DependentUpon>代工轉入庫及出庫條碼.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_倉儲\鮮享\代工轉入生產.resx">
+      <DependentUpon>代工轉入生產.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_倉儲\鮮享\草稿單入庫轉入.resx">
+      <DependentUpon>草稿單入庫轉入.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_加工\製程_記錄\0_01製程基本標準.resx">
+      <DependentUpon>0_01製程基本標準.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_加工\製程_記錄\0_02製程基本標準.resx">
+      <DependentUpon>0_02製程基本標準.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_品管\查詢\v001檢查記錄.resx">
+      <DependentUpon>v001檢查記錄.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_品管\退貨\退貨統計V100.resx">
+      <DependentUpon>退貨統計V100.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_品管\退貨\退貨記錄V100.resx">
+      <DependentUpon>退貨記錄V100.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_會計\發票\發票比對作業v001.resx">
+      <DependentUpon>發票比對作業v001.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_測試\Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_營業\基礎資料\客戶品項V100.resx">
+      <DependentUpon>客戶品項V100.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_營業\基礎資料\客戶變價V100.resx">
+      <DependentUpon>客戶變價V100.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_營業\契養作業\製單對照\製單對照表.resx">
+      <DependentUpon>製單對照表.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_營業\查詢\v001出貨單查詢.resx">
+      <DependentUpon>v001出貨單查詢.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_營業\發票作業\v002發票查詢列印.resx">
+      <DependentUpon>v002發票查詢列印.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_營業\訂單作業\上傳訂單統計V001.resx">
+      <DependentUpon>上傳訂單統計V001.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_營業\訂單作業\單據重量列印V001.resx">
+      <DependentUpon>單據重量列印V001.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_營業\訂單作業\營業訂單V101.resx">
+      <DependentUpon>營業訂單V101.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_營業\訂單作業\營業訂單V102.resx">
+      <DependentUpon>營業訂單V102.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_營業\訂單作業\營業訂單V103.resx">
+      <DependentUpon>營業訂單V103.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_營業\訂單作業\營業訂單V104.resx">
+      <DependentUpon>營業訂單V104.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_營業\訂單作業\訂單上傳作業.resx">
+      <DependentUpon>訂單上傳作業.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_營業\訂單作業\訂單回傳2_作業.resx">
+      <DependentUpon>訂單回傳2_作業.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_營業\訂單作業\訂單回傳1_作業.resx">
+      <DependentUpon>訂單回傳1_作業.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AboutForm.resx">
+      <DependentUpon>AboutForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_倉儲\入庫_作業\生產入庫V100.resx">
+      <DependentUpon>生產入庫V100.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="A_營業\訂單作業\單據重量列印.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="A_營業\訂單作業\退貨作業\退貨作業V100.resx">
+      <DependentUpon>退貨作業V100.vb</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="A_營業\訂單作業\退貨作業\退貨單列印.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="A_倉儲\入庫_作業\退貨入庫V100.resx">
+      <DependentUpon>退貨入庫V100.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_營業\預估\數量差異表.resx">
+      <DependentUpon>數量差異表.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_營業\預估\預估訂單數量V101.resx">
+      <DependentUpon>預估訂單數量V101.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_營業\預估\預估訂單數量V100.resx">
+      <DependentUpon>預估訂單數量V100.vb</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="A_生管\報表\線上撿貨列印.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="A_生管\排程\v001訂單轉排程.resx">
+      <DependentUpon>v001訂單轉排程.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_生管\排程\v002訂單轉排程.resx">
+      <DependentUpon>v002訂單轉排程.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_生管\排程\排程顯示v001.resx">
+      <DependentUpon>排程顯示v001.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_生管\排程\生產排程改-生管.resx">
+      <DependentUpon>生產排程改-生管.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_生管\排程\生產需求設定V001.resx">
+      <DependentUpon>生產需求設定V001.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_生管\排程\線上撿貨V001.resx">
+      <DependentUpon>線上撿貨V001.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_生管\查詢\v001冷藏貨庫存查詢表.resx">
+      <DependentUpon>v001冷藏貨庫存查詢表.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_生管\查詢\v001產程明細表.resx">
+      <DependentUpon>v001產程明細表.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_生管\查詢\生產產成計算.resx">
+      <DependentUpon>生產產成計算.vb</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="A_生管\報表\產程明細列印.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="A_生管\比對\比對表_v100.resx">
+      <DependentUpon>比對表_v100.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_生管\磅秤\現場磅秤資訊V001.resx">
+      <DependentUpon>現場磅秤資訊V001.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_生管\磅秤\磅秤品項設定v101.resx">
+      <DependentUpon>磅秤品項設定v101.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_生管\通用\生產需求計算程式.resx">
+      <DependentUpon>生產需求計算程式.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_生管\BOM\電宰基本BOM.resx">
+      <DependentUpon>電宰基本BOM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_生管\通用\生產需求統計v001.resx">
+      <DependentUpon>生產需求統計v001.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_職安\v001健檢數據資料.resx">
+      <DependentUpon>v001健檢數據資料.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_薪資\0032v001工時統計表.resx">
+      <DependentUpon>0032v001工時統計表.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_薪資\計件\計件計算V102.resx">
+      <DependentUpon>計件計算V102.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_薪資\計件\計件計算V101.resx">
+      <DependentUpon>計件計算V101.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_倉儲\鮮享\交貨單轉出與轉入.resx">
+      <DependentUpon>交貨單轉出與轉入.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="B_通用\v001存領單查詢.resx">
+      <DependentUpon>v001存領單查詢.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="B_通用\內部記錄.resx">
+      <DependentUpon>內部記錄.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_生管\磅秤\磅秤品項設定v100.resx">
+      <DependentUpon>磅秤品項設定v100.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group B\v001毛雞預估查詢.resx">
+      <DependentUpon>v001毛雞預估查詢.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group B\代工快速領料作業.resx">
+      <DependentUpon>代工快速領料作業.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group B\報表\B_rpSPicking9.rdlc" />
+    <EmbeddedResource Include="Group B\毛雞預估列印.rdlc" />
+    <EmbeddedResource Include="Group C\查詢用\C_查詢出庫資料.resx">
+      <DependentUpon>C_查詢出庫資料.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group E\E_rpPayment.rdlc" />
+    <EmbeddedResource Include="Group Z\Z_OQUT.resx">
+      <DependentUpon>Z_OQUT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="B_通用\Z_StockApply.resx">
+      <DependentUpon>Z_StockApply.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="B_通用\Z_StockApplyList.resx">
+      <DependentUpon>Z_StockApplyList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group Z\報表\Z_ReportViewer.resx">
+      <DependentUpon>Z_ReportViewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group Z\報表\Z_StockApply_Report.rdlc" />
+    <EmbeddedResource Include="Group Z\報表\Z_Welfare_Report.rdlc" />
+    <EmbeddedResource Include="Group Z\報表\Z_冷藏貨庫存表_Report.rdlc" />
+    <EmbeddedResource Include="Group Z\報表\Z_加工原料肉領料單_Report.rdlc" />
+    <EmbeddedResource Include="契養\FdCkCloseID.resx">
+      <DependentUpon>FdCkCloseID.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="契養\FdCKReport.rdlc" />
+    <EmbeddedResource Include="A_營業\空籃作業\A_AddEBadjust.resx">
+      <DependentUpon>A_AddEBadjust.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_營業\契養作業\A_ContractFarms.resx">
+      <DependentUpon>A_ContractFarms.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_營業\契養作業\A_ContractSettlement.resx">
+      <DependentUpon>A_ContractSettlement.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group A\A_DriversFee.resx">
+      <DependentUpon>A_DriversFee.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_營業\空籃作業\A_EBin.resx">
+      <DependentUpon>A_EBin.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group A\A_ORDR.resx">
+      <DependentUpon>A_ORDR.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_營業\空籃作業\A_QueryEB.resx">
+      <DependentUpon>A_QueryEB.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group A\A_QueryODLN.resx">
+      <DependentUpon>A_QueryODLN.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group A\EC出貨表單列印\A_EC_List.resx">
+      <DependentUpon>A_EC_List.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="B_通用\存領申請EC\A_ECStockApplyList.resx">
+      <DependentUpon>A_ECStockApplyList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group A\EC宅配單列印\A_TransPaper_List.resx">
+      <DependentUpon>A_TransPaper_List.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group A\EC進價維護\A_ECPrice.resx">
+      <DependentUpon>A_ECPrice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group A\EC進價維護\A_ECPriceExamine.resx">
+      <DependentUpon>A_ECPriceExamine.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group A\EC進價維護\A_ECPriceList.resx">
+      <DependentUpon>A_ECPriceList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group A\報表\A_ECOrder_Report.rdlc" />
+    <EmbeddedResource Include="Group A\報表\A_EC_Delivery_Report.rdlc" />
+    <EmbeddedResource Include="Group A\報表\A_EC_Get_Report.rdlc" />
+    <EmbeddedResource Include="Group A\報表\A_EC_Report.rdlc" />
+    <EmbeddedResource Include="Group A\報表\A_ReportViewer.resx">
+      <DependentUpon>A_ReportViewer.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group A\報表\A_rpAdjustDetail.rdlc" />
+    <EmbeddedResource Include="Group A\報表\A_rpAdjustStatistic.rdlc" />
+    <EmbeddedResource Include="Group A\報表\A_rpCarDrDetail.rdlc" />
+    <EmbeddedResource Include="Group A\報表\A_rpCarDrStatistic.rdlc" />
+    <EmbeddedResource Include="Group A\報表\A_rpEBStatistic.rdlc" />
+    <EmbeddedResource Include="Group A\報表\A_rpInDetail.rdlc" />
+    <EmbeddedResource Include="Group A\報表\A_rpInStatistic.rdlc" />
+    <EmbeddedResource Include="Group A\報表\A_rpOutDetail.rdlc" />
+    <EmbeddedResource Include="Group A\報表\A_rpOutStatistic.rdlc" />
+    <EmbeddedResource Include="Group A\A_SalesFee.resx">
+      <DependentUpon>A_SalesFee.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group A\A_Scheduling.resx">
+      <DependentUpon>A_Scheduling.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_營業\空籃作業\A_UpdateEBadjust.resx">
+      <DependentUpon>A_UpdateEBadjust.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_營業\空籃作業\A_UpdateEBin.resx">
+      <DependentUpon>A_UpdateEBin.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group A\報表\A_rpEBStatement.rdlc" />
+    <EmbeddedResource Include="Group A\報表\A_rpContractSettlement.rdlc" />
+    <EmbeddedResource Include="Group A\員購價維護相關\A_WelfarePrice.resx">
+      <DependentUpon>A_WelfarePrice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group A\員購價維護相關\A_WelfarePriceExamine.resx">
+      <DependentUpon>A_WelfarePriceExamine.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group A\員購價維護相關\A_WelfarePriceList.resx">
+      <DependentUpon>A_WelfarePriceList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group A\外部人員基本資料\A_OutSideEmpBasicData.resx">
+      <DependentUpon>A_OutSideEmpBasicData.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group A\外部人員基本資料\A_OutSideEmpBasicDataList.resx">
+      <DependentUpon>A_OutSideEmpBasicDataList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group A\快速回傳B1\A_AUTO_ORDR.resx">
+      <DependentUpon>A_AUTO_ORDR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group A\快速回傳B1\A_Welfare_List.resx">
+      <DependentUpon>A_Welfare_List.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group B\B_AddFinishItem.resx">
+      <DependentUpon>B_AddFinishItem.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group B\B_AddSchedule.resx">
+      <DependentUpon>B_AddSchedule.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group B\B_AddTransportation.resx">
+      <DependentUpon>B_AddTransportation.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_生管\通用\B_CalcBomNeeds.resx">
+      <DependentUpon>B_CalcBomNeeds.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group B\B_CalcMelts.resx">
+      <DependentUpon>B_CalcMelts.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group B\計算產出率v001.resx">
+      <DependentUpon>計算產出率v001.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group B\ScaleOITM\ScaleOITM2.resx">
+      <DependentUpon>ScaleOITM2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_生管\排程\生產排程v001.resx">
+      <DependentUpon>生產排程v001.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group B\領料單\B_QckAddOIGEv3.resx">
+      <DependentUpon>B_QckAddOIGEv3.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group B\報表\B_rpDispatching.rdlc" />
+    <EmbeddedResource Include="A_生管\排程\B_OrderPicking.resx">
+      <DependentUpon>B_OrderPicking.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_生管\排程\B_OSPdata.resx">
+      <DependentUpon>B_OSPdata.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group B\B_QckAddOIGE.resx">
+      <DependentUpon>B_QckAddOIGE.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group B\領料單\B_QckAddOIGEv2.resx">
+      <DependentUpon>B_QckAddOIGEv2.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group B\B_QckAddOWOR.resx">
+      <DependentUpon>B_QckAddOWOR.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group B\快速回填生產訂單v001.resx">
+      <DependentUpon>快速回填生產訂單v001.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group B\B_QckUpdateTransPrice.resx">
+      <DependentUpon>B_QckUpdateTransPrice.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group B\B_QueryFinishedORDR.resx">
+      <DependentUpon>B_QueryFinishedORDR.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group B\B_QueryOIGE.resx">
+      <DependentUpon>B_QueryOIGE.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group B\B_QueryOIGEByU_CK02.resx">
+      <DependentUpon>B_QueryOIGEByU_CK02.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group B\查詢生產訂單v001.resx">
+      <DependentUpon>查詢生產訂單v001.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group B\B_QueryOutside.resx">
+      <DependentUpon>B_QueryOutside.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group B\B_QueryPickingItem.resx">
+      <DependentUpon>B_QueryPickingItem.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group B\B_QuerySchedule.resx">
+      <DependentUpon>B_QuerySchedule.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group B\毛雞運輸日報表v001.resx">
+      <DependentUpon>毛雞運輸日報表v001.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group B\報表\B_rpMelts.rdlc" />
+    <EmbeddedResource Include="Group B\報表\B_rpThroughput.rdlc" />
+    <EmbeddedResource Include="Group B\報表\B_rpTransport.rdlc" />
+    <EmbeddedResource Include="Group B\報表\B_rpSPicking1.rdlc" />
+    <EmbeddedResource Include="Group B\B_UpdateSchedule.resx">
+      <DependentUpon>B_UpdateSchedule.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group B\B_UpdateTransportation.resx">
+      <DependentUpon>B_UpdateTransportation.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group B\報表\B_rpFeeding .rdlc" />
+    <EmbeddedResource Include="Group B\報表\B_rpOrderPicking.rdlc" />
+    <EmbeddedResource Include="Group B\報表\B_rpSPicking2.rdlc" />
+    <EmbeddedResource Include="Group B\報表\B_rpSPicking7.rdlc" />
+    <EmbeddedResource Include="Group B\報表\B_rpSPicking5.rdlc" />
+    <EmbeddedResource Include="Group B\報表\B_rpSPicking4.rdlc" />
+    <EmbeddedResource Include="Group B\報表\B_rpSPicking3.rdlc" />
+    <EmbeddedResource Include="Group B\報表\B_rpSPicking6.rdlc" />
+    <EmbeddedResource Include="Group B\B_Whours.resx">
+      <DependentUpon>B_Whours.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group B\B_QckAddOIGEv5.resx">
+      <DependentUpon>B_QckAddOIGEv5.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group B\報表\B_rpSPicking8.rdlc" />
+    <EmbeddedResource Include="A_倉儲\出庫_作業\派工\排程領料\扣帳作業.resx">
+      <DependentUpon>扣帳作業.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_倉儲\出庫_作業\派工\派工作業.resx">
+      <DependentUpon>派工作業.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group C\儲位管理\儲位基本資料維護\StorePlaceBasicData.resx">
+      <DependentUpon>StorePlaceBasicData.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group C\儲位管理\查單庫位資料.resx">
+      <DependentUpon>查單庫位資料.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group C\儲位管理\查條碼明細.resx">
+      <DependentUpon>查條碼明細.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group C\出庫\C_出庫.resx">
+      <DependentUpon>C_出庫.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group C\儲位管理\C_BatchChangeSpace.resx">
+      <DependentUpon>C_BatchChangeSpace.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group C\儲位管理\C_ChangeSpace.resx">
+      <DependentUpon>C_ChangeSpace.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_倉儲\入庫_作業\C_生產入庫舊.resx">
+      <DependentUpon>C_生產入庫舊.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_倉儲\入庫_作業\C_採購入庫.resx">
+      <DependentUpon>C_採購入庫.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_倉儲\入庫_作業\C_特殊入庫.resx">
+      <DependentUpon>C_特殊入庫.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group C\C_Inquiry\C_Inquiry_001.resx">
+      <DependentUpon>C_Inquiry_001.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_倉儲\出庫_作業\Bak\C_OutB1.resx">
+      <DependentUpon>C_OutB1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group C\C_Print_Batch.resx">
+      <DependentUpon>C_Print_Batch.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group C\C_Print_Single.resx">
+      <DependentUpon>C_Print_Single.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group C\C_QckAddChickenOutOIGE.resx">
+      <DependentUpon>C_QckAddChickenOutOIGE.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group C\C_QueryAllocateWplace.resx">
+      <DependentUpon>C_QueryAllocateWplace.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group C\儲位管理\C_QueryChangeSpace.resx">
+      <DependentUpon>C_QueryChangeSpace.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group C\C_QueryFIMainDetail.resx">
+      <DependentUpon>C_QueryFIMainDetail.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group C\C_QueryFIMainStatus.resx">
+      <DependentUpon>C_QueryFIMainStatus.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group C\C_QueryFromSpace.resx">
+      <DependentUpon>C_QueryFromSpace.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group C\出庫\未入庫清單.resx">
+      <DependentUpon>未入庫清單.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group C\庫位\指定人庫.resx">
+      <DependentUpon>指定人庫.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group C\查詢用\C_QuerySRNDetail.resx">
+      <DependentUpon>C_QuerySRNDetail.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group C\查詢用\C_QuerySRNFromDraft.resx">
+      <DependentUpon>C_QuerySRNFromDraft.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group C\C_QuerySRNInPDAIn.resx">
+      <DependentUpon>C_QuerySRNInPDAIn.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_倉儲\出庫_作業\出庫作業V100.resx">
+      <DependentUpon>出庫作業V100.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_倉儲\查詢_庫存\庫存入庫比對.resx">
+      <DependentUpon>庫存入庫比對.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group C\C_QuerySRNStatus.resx">
+      <DependentUpon>C_QuerySRNStatus.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group C\C_QuerySRNTradesDetail.resx">
+      <DependentUpon>C_QuerySRNTradesDetail.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group C\庫位\C_QuerySuggestWplace.resx">
+      <DependentUpon>C_QuerySuggestWplace.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group C\庫位\C_QueryWplaceStatus.resx">
+      <DependentUpon>C_QueryWplaceStatus.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group C\C_STSForInv.resx">
+      <DependentUpon>C_STSForInv.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_倉儲\同步_作業\Excel讀取轉入.resx">
+      <DependentUpon>Excel讀取轉入.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_倉儲\查詢_庫存\查庫位品項.resx">
+      <DependentUpon>查庫位品項.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_倉儲\查詢_庫存\查庫存_G.resx">
+      <DependentUpon>查庫存_G.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_倉儲\出庫_作業\派工\A_文件查庫存.resx">
+      <DependentUpon>A_文件查庫存.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group D\D_AccMainFrom.resx">
+      <DependentUpon>D_AccMainFrom.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group D\D_AccReport.resx">
+      <DependentUpon>D_AccReport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group D\D_AllJournal.resx">
+      <DependentUpon>D_AllJournal.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group D\D_CompareFrom.resx">
+      <DependentUpon>D_CompareFrom.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group D\D_CostcoPayment.resx">
+      <DependentUpon>D_CostcoPayment.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group D\D_JournalCheck.resx">
+      <DependentUpon>D_JournalCheck.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group D\D_SellToSave.resx">
+      <DependentUpon>D_SellToSave.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group D\Loading.resx">
+      <DependentUpon>Loading.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group E\E_PaymentForm.resx">
+      <DependentUpon>E_PaymentForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group E\E_QckAddOPOR.resx">
+      <DependentUpon>E_QckAddOPOR.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group E\E_ReportViewer.resx">
+      <DependentUpon>E_ReportViewer.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Group E\E_rpPayment--.rdlc" />
+    <None Include="Group E\複製 - E_rpPayment.rdlc" />
+    <EmbeddedResource Include="A_LogIn\MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_LogIn\MainMenuList.resx">
+      <DependentUpon>MainMenuList.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage\IDMgn.resx">
+      <DependentUpon>IDMgn.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage\UP2Mgn.resx">
+      <DependentUpon>UP2Mgn.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectCustForFarm.resx">
+      <DependentUpon>SelectCustForFarm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectFarmName.resx">
+      <DependentUpon>SelectFarmName.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectItem.resx">
+      <DependentUpon>SelectItem.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectName.resx">
+      <DependentUpon>SelectName.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="testFrom.resx">
+      <DependentUpon>testFrom.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group B\報表\B_ReportViewer.resx">
+      <DependentUpon>B_ReportViewer.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="契養\FdCkReportView.resx">
+      <DependentUpon>FdCkReportView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="契養\FdCkSettle.resx">
+      <DependentUpon>FdCkSettle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="契養\FdCk_Expense.resx">
+      <DependentUpon>FdCk_Expense.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="契養\FdCk_Kind.resx">
+      <DependentUpon>FdCk_Kind.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="褔利社\ScaleOITM_褔利社.resx">
+      <DependentUpon>ScaleOITM_褔利社.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="褔利社\Z_Welfare_List.resx">
+      <DependentUpon>Z_Welfare_List.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="褔利社\員購訂單.resx">
+      <DependentUpon>員購訂單.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="記錄表格\倉儲\倉儲記錄.resx">
+      <DependentUpon>倉儲記錄.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="記錄表格\倉儲\倉儲記錄2.resx">
+      <DependentUpon>倉儲記錄2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="記錄表格\倉儲\急速條碼.resx">
+      <DependentUpon>急速條碼.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="記錄表格\生產\屠宰記錄.resx">
+      <DependentUpon>屠宰記錄.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Group B\領料單\B.領料單作業.txt" />
+    <None Include="Group C\查詢用\A.查詢用.txt" />
+    <None Include="Icon.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Log.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="TSCLib.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="app.config" />
+    <None Include="ks.dat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="KSSystem_TemporaryKey.pfx" />
+    <None Include="LOGO1-PNG.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ks_Log.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="QuickOIGE.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ReportDataSet.xsc">
+      <DependentUpon>ReportDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ReportDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReportDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="ReportDataSet.xss">
+      <DependentUpon>ReportDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="契養\KaiShingPlugDataSet.xsc">
+      <DependentUpon>KaiShingPlugDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="契養\KaiShingPlugDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KaiShingPlugDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="契養\KaiShingPlugDataSet.xss">
+      <DependentUpon>KaiShingPlugDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="SAPbobsCOM">
+      <Guid>{FC8030BE-F5D2-4B8E-8F92-44228FE30088}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="A_倉儲\同步_作業\Bak\" />
+    <Folder Include="A_營業\EC作業\" />
+    <Folder Include="A_營業\基礎資料\Bak\" />
+    <Folder Include="A_生管\加工\" />
+    <Folder Include="記錄表格\品管\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
